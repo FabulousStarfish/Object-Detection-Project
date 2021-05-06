@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>OBJECT DETECTION</title>
+        <title>Object Detection</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,15 +16,13 @@
     </head>
     <body>
         <center>
-            <p id="heading">Object Detection</p>
-
-            <br><br><br>
-
-            <a href="page1.html" class="href_tags" style="width: 50%;">Bedroom</a><br><br>
-            <a href="" class="href_tags" style="width: 50%;">AC</a><br><br>
-            <a href="" class="href_tags" style="width: 50%;">Bottles</a><br><br>
-            <a href="" class="href_tags" style="width: 50%;">Basket</a><br><br>
-            <a href="" class="href_tags" style="width: 50%;">Desk</a><br><br>
+            <p id="heading"><span id="back_Button" class="glyphicon glyphicon-chevron-left" onclick='back()'></span>Object Detection</p>
+            <br>
+            <button id="status_button">Status</button>
+            <br><br>
+            <p id="detected"><b><i>0/5</i></b> images have been detected</p>
         </center>
     </body>
+    <script src="page1.js"></script>
+    <script src="main.js"></script>
 </html>
