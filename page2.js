@@ -3,7 +3,7 @@ status="";
 objects=[];
 
 function preload(){
-    img=loadImage('bedroom.jpg');
+    img=loadImage('traffic.jpg');
 }
 function setup(){
     canvas=createCanvas(600,400);

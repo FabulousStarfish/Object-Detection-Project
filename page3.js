@@ -3,7 +3,7 @@ status="";
 objects=[];
 
 function preload(){
-    img=loadImage('bedroom.jpg');
+    img=loadImage('tower.jpg');
 }
 function setup(){
     canvas=createCanvas(600,400);
@@ -29,8 +29,8 @@ function draw(){
     if(status!=""){
         for(z=0;z<objects.length;z++){
             percentage=floor(objects[z].confidence*100);
-            fill('#290e0a');
-            stroke('#290e0a');
+            fill('#23968b');
+            stroke('#23968b');
             rect(objects[z].x,objects[z].y-30,120,30,0,10,0,0);
             noFill();
             rect(objects[z].x,objects[z].y,objects[z].width,objects[z].height);

@@ -3,7 +3,7 @@ status="";
 objects=[];
 
 function preload(){
-    img=loadImage('bedroom.jpg');
+    img=loadImage('table.jpg');
 }
 function setup(){
     canvas=createCanvas(600,400);
@@ -29,13 +29,13 @@ function draw(){
     if(status!=""){
         for(z=0;z<objects.length;z++){
             percentage=floor(objects[z].confidence*100);
-            fill('#290e0a');
-            stroke('#290e0a');
-            rect(objects[z].x,objects[z].y-30,120,30,0,10,0,0);
+            fill('#23968b');
+            stroke('#23968b');
+            rect(objects[z].x-75,objects[z].y-180,120,30,0,10,0,0);
             noFill();
-            rect(objects[z].x,objects[z].y,objects[z].width,objects[z].height);
+            rect(objects[z].x-75,objects[z].y-150,objects[z].width,objects[z].height);
             fill('#ffffff');
-            text(objects[z].label+"  "+percentage+"%",objects[z].x+5,objects[z].y-10);
+            text(objects[z].label+"  "+percentage+"%",objects[z].x-70,objects[z].y-160);
             document.getElementById("detected").innerHTML="<b>"+objects.length+"</b> objects have been detected";  
             document.getElementById("status_button").innerHTML="Objects Detected";
         }
